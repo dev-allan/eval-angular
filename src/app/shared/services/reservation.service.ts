@@ -12,7 +12,7 @@ export class ReservationService {
 
   constructor(private http: HttpClient) { }
 
-  Reservation(reservation : Reservation): Observable<Reservation> {
-    return this.http.post<Reservation>(`${environment.apiUrl}/reservation/`, reservation)
+  createReservation(reservation : Reservation): Observable<Reservation> {
+    return this.http.post<Reservation>(`${environment.apiUrl}/reservations`, reservation)
   }
 }

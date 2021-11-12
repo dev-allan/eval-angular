@@ -1,6 +1,5 @@
 export interface Reservation {
-    id: number,
-    clientId : number,
-    filmId : number,
-    saleId : number
+    id?: number,
+    name : string,
+    realisateur : string,
 }

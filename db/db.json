@@ -16,7 +16,13 @@
       "id": 3
     }
   ],
-  "reservations": [],
+  "reservations": [
+    {
+      "id": 1,
+      "name": "les évadés",
+      "realisateur": "Gerard"
+    }
+  ],
   "salles": [
     {
       "id": 1,
@@ -36,16 +42,10 @@
   ],
   "clients": [
     {
-      "name": "bidule",
-      "username": "ma",
-      "email": "chin",
-      "id": 4
-    },
-    {
-      "name": "aaaaaaa",
-      "username": "aaaa",
-      "email": "aaa",
-      "id": 5
+      "name": "eeee",
+      "username": "zzz",
+      "email": "zzz",
+      "id": 1
     }
   ]
 }

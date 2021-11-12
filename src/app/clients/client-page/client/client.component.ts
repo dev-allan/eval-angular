@@ -19,12 +19,6 @@ export class ClientComponent implements OnInit {
   }
 
   deleteClient(): void {
-    // if (this.client.id) {
-    //   this.clientService.deleteClientById(this.client.id)
-    //     .subscribe((_) => {
-    //       this.deleteEmitter.emit();
-    //     })
-    // }
     this.clientService.deleteClientById(this.client.id)
     .subscribe((_) => {
       this.deleteEmitter.emit();
