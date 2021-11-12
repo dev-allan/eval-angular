@@ -12,6 +12,10 @@ export class ReservationService {
 
   constructor(private http: HttpClient) { }
 
+  getReservations(): Observable<Reservation[]> {
+    return this.http.get<Reservation[]>(`${environment.apiUrl}/reservations`);
+  }
+
   createReservation(reservation : Reservation): Observable<Reservation> {
     return this.http.post<Reservation>(`${environment.apiUrl}/reservations`, reservation)
   }

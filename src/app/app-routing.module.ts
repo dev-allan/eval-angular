@@ -6,7 +6,6 @@ import { FilmCreateComponent } from './films/film-create/film-create.component';
 import { FilmPageComponent } from './films/film-page/film-page.component';
 import { HomeComponent } from './home/home.component';
 import { ReservationsComponent } from './reservations/reservations.component';
-import { SallesComponent } from './salles/salles.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 
 const routes: Routes = [
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: "film", component: FilmPageComponent },
   { path: "client", component: ClientPageComponent},
   { path: "reservation", component: ReservationsComponent},
-  { path: "salle", component: SallesComponent}, 
 
   {
     path:"film", children: [
