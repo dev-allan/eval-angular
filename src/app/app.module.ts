@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { SallesComponent } from './salles/salles.component';
 import { FilmComponent } from './films/film-page/film/film.component';
+import { FilmCreateComponent } from './films/film-create/film-create.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FilmComponent } from './films/film-page/film/film.component';
     SallesComponent,
     FilmPageComponent,
     FilmComponent,
+    FilmCreateComponent,
   ],
   imports: [
     BrowserModule,
