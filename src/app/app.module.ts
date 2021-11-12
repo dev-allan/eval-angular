@@ -14,6 +14,7 @@ import { FilmComponent } from './films/film-page/film/film.component';
 import { FilmCreateComponent } from './films/film-create/film-create.component';
 import { ClientCreateComponent } from './clients/client-create/client-create.component';
 import { ClientPageComponent } from './clients/client-page/client-page.component';
+import { ClientComponent } from './clients/client-page/client/client.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ClientPageComponent } from './clients/client-page/client-page.component
     FilmCreateComponent,
     ClientCreateComponent,
     ClientPageComponent,
+    ClientComponent,
   ],
   imports: [
     BrowserModule,
