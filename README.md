@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Installation des dépendances
+
+Executer `npm install` pour installer toutes les dépendances nécessaires au projet
+
+## Execution de la BDD
+
+Utiliser la commande `json-server --watch db/db.json` pour executer la BDD sur le port 3000
