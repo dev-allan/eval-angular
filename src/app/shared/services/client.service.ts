@@ -18,4 +18,8 @@ export class ClientService {
   createClient(client: Client): Observable<Client>{
     return this.http.post<Client>(`${environment.apiUrl}/clients`, client)
   }
+
+  deleteClientById(id: number): Observable<void> {
+    return this.http.delete<void>(`${environment.apiUrl}/clients/${id}`)
+  }
 }

@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Client } from 'src/app/shared/models/client';
+import { ClientService } from 'src/app/shared/services/client.service';
 
 @Component({
   selector: 'app-client',
@@ -9,10 +10,25 @@ import { Client } from 'src/app/shared/models/client';
 export class ClientComponent implements OnInit {
 
   @Input() client!: Client;
-  
-  constructor() { }
+
+  @Output() deleteEmitter: EventEmitter<string> = new EventEmitter<string>();
+
+  constructor(private clientService : ClientService) { }
 
   ngOnInit(): void {
+  }
+
+  deleteClient(): void {
+    // if (this.client.id) {
+    //   this.clientService.deleteClientById(this.client.id)
+    //     .subscribe((_) => {
+    //       this.deleteEmitter.emit();
+    //     })
+    // }
+    this.clientService.deleteClientById(this.client.id)
+    .subscribe((_) => {
+      this.deleteEmitter.emit();
+    })
   }
 
 }

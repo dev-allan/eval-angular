@@ -16,14 +16,7 @@
       "id": 3
     }
   ],
-  "reservations": [
-    {
-      "id": 1,
-      "clientId": 1,
-      "filmId": 1,
-      "salleId": 1
-    }
-  ],
+  "reservations": [],
   "salles": [
     {
       "id": 1,
@@ -42,24 +35,6 @@
     }
   ],
   "clients": [
-    {
-      "id": 1,
-      "name": "Gerard",
-      "username": "Bret",
-      "email": "Sincere@april.biz"
-    },
-    {
-      "id": 2,
-      "name": "Gerard",
-      "username": "Bret",
-      "email": "Sincere@april.biz"
-    },
-    {
-      "id": 3,
-      "name": "Gerard",
-      "username": "Bret",
-      "email": "Sincere@april.biz"
-    },
     {
       "name": "bidule",
       "username": "ma",
