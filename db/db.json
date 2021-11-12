@@ -1,59 +1,64 @@
 {
-    "films": [
-        {
-            "id": 1,
-            "name": "les évadés",
-            "realisateur": "Gerard"
-        },
-        {
-            "id": 2,
-            "name": "La grande vadrouille",
-            "realisateur": "Zidi"
-        }
-    ],
-    "reservations":[
-        {
-            "id": 1,
-            "clientId": 1,
-            "filmId": 1,
-            "salleId": 1
-          }
-    ],
-    "salles": [
-        {
-            "id": 1,
-            "name": "Clint",
-            "numero": "11111"
-        },
-        {
-            "id": 2,
-            "name": "Clint",
-            "numero": "11111"
-        },
-        {
-            "id": 3,
-            "name": "Clint",
-            "numero": "11111"
-        }
-    ],
-    "clients": [
-        {
-            "id": 1,
-            "name": "Gerard",
-            "username": "Bret",
-            "email": "Sincere@april.biz"
-        },
-        {
-            "id": 2,
-            "name": "Gerard",
-            "username": "Bret",
-            "email": "Sincere@april.biz"
-        },
-        {
-            "id": 3,
-            "name": "Gerard",
-            "username": "Bret",
-            "email": "Sincere@april.biz"
-        }
-    ]
-  }
+  "films": [
+    {
+      "id": 1,
+      "name": "les évadés",
+      "realisateur": "Gerard"
+    },
+    {
+      "id": 2,
+      "name": "La grande vadrouille",
+      "realisateur": "Zidi"
+    },
+    {
+      "name": "zz",
+      "realisateur": "aa",
+      "id": 3
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "clientId": 1,
+      "filmId": 1,
+      "salleId": 1
+    }
+  ],
+  "salles": [
+    {
+      "id": 1,
+      "name": "Clint",
+      "numero": "11111"
+    },
+    {
+      "id": 2,
+      "name": "Clint",
+      "numero": "11111"
+    },
+    {
+      "id": 3,
+      "name": "Clint",
+      "numero": "11111"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "Gerard",
+      "username": "Bret",
+      "email": "Sincere@april.biz"
+    },
+    {
+      "id": 2,
+      "name": "Gerard",
+      "username": "Bret",
+      "email": "Sincere@april.biz"
+    },
+    {
+      "id": 3,
+      "name": "Gerard",
+      "username": "Bret",
+      "email": "Sincere@april.biz"
+    }
+  ]
+}

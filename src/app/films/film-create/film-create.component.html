@@ -1,1 +1,16 @@
-<p>film-create works!</p>
+<h2>Ajouter un film</h2>
+
+<form [formGroup]="filmForm" (ngSubmit)="sendForm()">
+    <div>
+        <label for="name">Titre du film</label>
+        <input type="text" id="name" formControlName="name">
+        <p *ngIf="!filmForm.controls['name'].valid">Le nom est requis</p>
+    </div>
+    <div>
+        <label for="realisateur">Nom du réalisateur</label>
+        <input type="text" id="realisateur" formControlName="realisateur">
+        <p *ngIf="!filmForm.controls['realisateur'].valid">Le realisateur est requis</p>
+    </div>
+
+    <button type="submit" [disabled]="!filmForm.valid">Ajouter</button>
+</form>
