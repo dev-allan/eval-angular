@@ -4,18 +4,19 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FilmsComponent } from './films/films.component';
+import { FilmPageComponent } from './films/film-page/film-page.component';
 import { ClientsComponent } from './clients/clients.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReservationsComponent } from './reservations/reservations.component';
 import { SallesComponent } from './salles/salles.component';
+import { FilmComponent } from './films/film-page/film/film.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilmsComponent,
+    FilmPageComponent,
     ClientsComponent,
     NavbarComponent,
     NotFoundComponent,
@@ -23,6 +24,8 @@ import { SallesComponent } from './salles/salles.component';
     NotFoundComponent,
     ReservationsComponent,
     SallesComponent,
+    FilmPageComponent,
+    FilmComponent,
   ],
   imports: [
     BrowserModule,
