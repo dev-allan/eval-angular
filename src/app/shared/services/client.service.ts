@@ -12,7 +12,10 @@ export class ClientService {
   constructor(private http: HttpClient) { }
 
   getClients(): Observable<Client[]> {
-    // récupération via client Http Angular
     return this.http.get<Client[]>(`${environment.apiUrl}/clients`);
+  }
+
+  createClient(client: Client): Observable<Client>{
+    return this.http.post<Client>(`${environment.apiUrl}/clients`, client)
   }
 }
